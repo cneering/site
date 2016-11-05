@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>The Singing Crab</title>
+<link href="style/style2.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+     
+    $('#nav li').hover(
+        function () {
+            //show its submenu
+            $('ul', this).slideDown(100);
+ 
+        },
+        function () {
+            //hide its submenu
+            $('ul', this).slideUp(100);        
+        }
+    );
+     
+});
+</script>
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body  onload="MM_preloadImages('images/menuhome_on.png', 'images/menuabout_on.png', 'images/menufood_on.png', 'images/menumenu_on.png', 'images/menucajun_on.png', 'images/menuchili_on.png', 'images/menufun_on.png', 'images/menumardi_on.png', 'images/menuparty_on.png', 'images/menucontact_on.png')">
+
+
+<div id="bgimage"> <!-- mesh bg -->
+    <div class="top">
+        <div class="containertop">
+            <div class="topleft">
+                <h1>The Singing Crab</h1>
+                <div id="fire1"><img src="images/firetopleft.png" alt="fire1" width="188" height="240" /></div>
+                <div id="fire2"><img src="images/firetopright.png" alt="fire2" width="226" height="240" /></div>
+                <div id="fire3"><img src="images/firesmallleft.png" alt="fire3" width="142" height="137" /></div>
+                <div id="fire4"><img src="images/firesmallright.png" alt="fire4" width="115" height="208" /></div>
+                <a href="index.html" id="homeclick"></a>
+            </div>
+        </div> <!-- end .containertop -->
+    </div> <!-- end .top -->
+  
+
+  <div id="navcontainer">
+	<ul id="nav">
+            <li><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home','','images/menuhome_on.png',1)"><img src="images/menuhome.png" alt="home" id="home" /></a></li>
+            <li><a href="about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('about','','images/menuabout_on.png',1)"><img src="images/menuabout.png" alt="about" id="about" /></a></li>
+            <li><a href="#" class="selected"><img src="images/menufood_on.png" alt="food" id="food" /></a>
+            	<ul>
+                	<li><a href="menu.html" class="selected"><img src="images/menumenu_on.png" alt="menu" id="menu" /></a></li>
+                    <li><a href="cajun.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cajun','','images/menucajun_on.png',1)"><img src="images/menucajun.png" alt="cajun" id="cajun" /></a></li>
+					<li><a href="chili.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('chili','','images/menuchili_on.png',1)"><img src="images/menuchili.png" alt="chili" id="chili" /></a></li>
+                 </ul>
+                 <div class="clear"></div>
+            </li>
+            <li><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fun','','images/menufun_on.png',1)"><img src="images/menufun.png" alt="fun" id="fun" /></a>
+                <ul>
+                    <li><a href="mardi.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('mardi','','images/menumardi_on.png',1)"><img src="images/menumardi.png" alt="mardi" id="mardi" /></a></li>
+                    <li><a href="party.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('party','','images/menuparty_on.png',1)"><img src="images/menuparty.png" alt="party" id="party" /></a></li>
+                </ul>
+                <div class="clear"></div>
+            </li>
+            <li><a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact','','images/menucontact_on.png',1)"><img src="images/menucontact.png" alt="contact" id="contact" /></a></li>
+        </ul>
+      </div> <!-- end #nav -->
+      
+
+
+
+	<div class="wrapper">
+		<div class="wrapper1">
+			<div class="wrapper2">
+                <div class="fencel"></div>  <!-- end #fencel / this pushes container div to right to show fence background -->
+                <div class="container">
+                    <div id="content" class="full">
+                        <div class="upperright">
+                          <p><a href="menuprint.html" target="_blank">Printer Friendly Version</a><br />
+                          <a href="#" target="_blank">Order Online</a></p>
+                        </div>
+                  <h1>What’s Cajun Food?</h1>
+                        <img src="images/titlemenu.png" alt="menu" class="pushright" />
+                        <h2 class="transparent">Entrees</h2>
+						<div class="menu">
+                        	<p class="menuitem">Better than Bubba Gump’s</p>    
+                        	<p>One big plate of shrimp, crab legs, crawfish, smoked sausage, potatoes and corn on the cob all boiled and steamed in cajun spices. $18.00</p>
+							<p class="menuitem">Hot Jambalaya!</p>    
+                            <p>A Cajun classic, our jambalaya is made with chicken, smoked sausage, bell pepper, spices, and ham. $15 small platter; $25 large platter.</p>    
+                            <p class="menuitem">Sucio Arroz</p>     
+                            <p>A mix of chicken liver, gizzards, pork, bell peppers, onions and a lotta spices. Also known as “Rice Dressing.” $12.00</p>
+							<p class="menuitem">Rice and Red Beans, Please</p>
+                            <p>A spicy, zesty blend of three different types of beans mixed with smoked sausage. $10.00 Also available as a side dish $5.00</p>
+                            <p class="menuitem">Smother me, Sugar, and this Relationship’s Done</p>
+                            <p>Our special Etouffee' (smothered Creole gumbo) served in a dark buttery sauce with your choice of either crawfish, shrimp, or heck, have both. $18.00</p>
+                            <p class="menuitem">More Gumbo Jumbo</p>
+                            <p>Gumbos are Cajun soups flavored with foods native to Native America and Africa. The Native Americans and Africans had a major influence on Cajun food. Our vegetable flavored Gumbo is a popular choice here at The Singing Crab. $6.00</p>
+                            
+                      </div> <!-- end .menu -->
+                        <div class="menu">
+                        	<p class="menuitem">Holy Shrimp!</p>
+                            <p>Okay, nowhere in the Bible is there any shrimp Creole. But eating ours is certainly a life-changing experience. Our shrimp Creole is tomato-based and served with lotsa shrimp. $15.00</p>
+                            <p class="menuitem">I Smell Something Fishy…</p>
+                            <p>Blackened Fish--fish lightly grilled and blackened. Served with jambalaya. $18.00</p>
+                            <p class="menuitem">Better Than Your Mama’s Chili</p>
+                            <p>Our award-winning Chili con carne comes with either beef or pork and is blended with tomato, onions, beans, and brown sugar. We also have a vegetarian chili available. $15.00</p>
+                            <p class="menuitem">Pass the Pig, Please</p>
+                            <p>Boudin is a type of sausage made from pork, pork liver, rice, garlic and onions, and other types of spices. Our Boudin is stuffed in a natural casing and has a softer consistency than other more well-known sausage varieties. Heck, we’re allowed to brag. Served with side dishes such as rice dressing, or bread. $16.00</p>
+                            
+                            <p class="menuitem">Crabby Crabby</p>
+                            <p>Cajun-Spiced Soft-Shell Crab Sandwich is served with Yellow Pepper and Caper Aioli. $14.00</p>
+                            <p class="menuitem">Have Some Gumbo, Dumbo</p>
+                            <p>Our world-famous Dark Gumbo is served with fish and shrimp over brown rice. $16.00</p>
+                      </div>
+                        <br />
+                        <h2 class="transparent">Sides</h2>
+                        
+                        <div class="menu">
+                        		<p>All sides are $3.00. <br />
+                                If ordered as a meal/larger portion, $6.00</p>
+                                <ul>
+                                      <li>Potato, almost always served with gumbo, and usually in it (generally plain, i.e. egg, potato, and mayo solely) </li>  
+                                      <li>Corn Mush  </li>
+                                      <li>Boiled crawfish (boiled with cayenne and salt, not sprinkled on after)  </li> 
+                                      <li>Tasso (spicy smoked pork used primarily for seasoning)  </li> 
+                                      <li>Crawfish etoufée   </li>
+                                      <li>Crawfish bisque (crawfish stew with small quenelles of crawfish stuffed into the head section of the crawfish shell)   </li>
+                                      <li>Shrimp or Alligator Sauce Piquante   </li>
+                                      <li>Cochon de Lait   </li>
+                                      <li>Catfish Courtboullion    </li>
+                                      <li>Fried Frog Legs   </li>
+                                      <li>Beignets &amp; Powdered Bread  </li>
+                                </ul>
+                        </div><!-- end .menu -->
+                        <div class="menu">
+                        		<ul>
+                                      <li class="pushdown">Pralines, most often made with pecans  </li> 
+                                      <li>Tarte à la Bouillie (sweet-dough custard tarts)   </li>
+                                      <li>Tabasco Sauce - a popular hot sauce produced in the Cajun Heartland   </li>
+                                      <li>Macaroni and Cheese  </li>
+                                      <li>Quesadillas; Cheese or Chicken  </li>
+                                      <li>Crawfish pie  </li>
+                                      <li>Apple pie  </li>
+                                      <li>Mini Chimichangas  </li>
+                                      <li>Rancheros  </li>
+                                      <li>Taquitos  </li>
+                                      <li>Skillet cornbread  </li>
+                                      <li>Maque Choux  </li> 
+                                      <li>Sassafrass Leaves</li>
+                                </ul>
+						</div><!-- end .menu -->
+                    </div><!-- end #content -->
+                    <br class="clear" />  <!-- drops background texture pas height-min -->
+                    	<div class="footer">
+							<p><a href="index.html">Home</a> <span class="colored">|</span><a href="about.html">About</a> <span class="colored">|</span><a href="menu.html">Menu</a> <span class="colored">|</span><a href="cajun.html">Cajun Food</a> <span class="colored">|</span><a href="chili.html">Chili Recipe</a> <span class="colored">|</span>  <a href="mardi.html">Mardi Gras</a> <span class="colored">|</span><a href="party.html">Party Time!</a> <span class="colored">|</span><a href="contact.html">Contact</a></p>
+						</div> <!-- end .footer -->
+                </div> <!-- end .container -->
+            	<div class="fencer"></div>  <!-- end #fencer / this pushes fencer div out to show fence background -->
+			</div> <!-- end .wrapper2 -->
+		</div> <!-- end .wrapper1 -->
+        <br class="clear" />  <!-- drops background texture pas height-min -->
+	</div><!-- end .wrapper -->
+</div> <!-- end #bgimage -->
+</body>
+</html>

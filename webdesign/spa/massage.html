@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Beatrice Spa and Beauty Salon</title>
+<link href="../spa/style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+     
+    $('#nav li').hover(
+        function () {
+            //show its submenu
+            $('ul', this).slideDown(100);
+ 
+        },
+        function () {
+            //hide its submenu
+            $('ul', this).slideUp(100);        
+        }
+    );
+     
+});
+</script>
+</head>
+
+<body>
+  <div class="top">
+    <div class="containertop">
+  		<div class="topleft">
+        	<h1>Beatrice Spa &amp; Beauty Salon</h1>
+            <a href="index.html"><img src="images/beatricelogogold.png" alt="logo" class="logo" /></a>
+			<div id="flourish1"><img src="images/flourishlft.png" width="175" height="100" alt="flourish" /></div>
+        	<div id="flourish2"><img src="images/flourishrt.png" width="175" height="100" alt="flourish" /></div>
+            <div id="facebook"><a href="#"><img src="images/facebook.gif" width="43" height="42" alt="facebook" /></a></div>
+			<div id="twitter"><a href="#"><img src="images/twitter.gif" width="43" height="42" alt="twitter" /></a></div>
+		</div>
+        <div class="topright">
+        </div>
+    </div> <!-- end .containertop -->
+  </div> <!-- end .top -->
+  
+  <div id="navcontainer">
+		<ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="massage.html" class="selected">Treatments</a>
+                <ul>
+                    <li><a href="massage.html" class="selected">Massage</a></li>
+                    <li><a href="facial.html">Facials</a></li>
+                    <li><a href="nails.html">Nails</a></li>
+                    <li><a href="hair.html">Hair Removal</a></li>
+                    <li><a href="makeup.html">Makeup</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                </ul>
+                <div class="clear"></div>
+            </li>
+            <li><a href="specialevents.html">Special Events</a></li>
+            <li><a href="staff.html">About Us</a>
+                <ul>
+                    <li><a href="photos.html">Photo Tour</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="beatrice.html">Beatrice</a></li>
+                </ul>
+                <div class="clear"></div>
+            </li>
+            <li><a href="#">Book Online</a>
+            	<ul>
+                <li><a href="#">Gift Certificate</a></li>
+                </ul>
+                <div class="clear"></div>
+			</li>
+        </ul>
+        <p class="login"><a href="#">Log In</a></p>
+      </div> <!-- end #nav -->
+      
+
+
+<div class="container">
+	<div id="content" class="narrow">
+		<h1>Massage</h1>
+		<div class="treatments">
+			<p><strong>Deep Tissue Massage</strong> (60  minute-$70; 30 minute $40): This  intense releases stimulates the blood flow all over the body and  relieves knotted muscles. Best for those with muscle tightness or  tension.</p>
+
+            <p><strong>Hot Stone Massage</strong> (60  minute-$100; 30 minute $55): Uses heated basalt  stones to soothe and relax the body. The heat from the stones helps  tight muscles to release.</p>
+           
+            <p><strong>Pre-Natal Massage</strong> (60  minute-$70; 30 minute $40): A pregnancy massage is the  fastest-growing type of massage in the U.S. This therapeutic and very  gentle bodywork focuses on the special needs of the mother-to-be as  her body goes through the changes of the childbirth experience. We  have special pregnancy massage tables for mommies-to-be.</p>
+            
+            <p><strong>Shiatsu Massage</strong> (60 minute-$75;  30 minute $50): A massage that releases toxins from the body, a  Shiatsu massage uses finger tapping and is  founded on the Chinese Meriden system.</p>
+           
+            <p><strong>Sport Massage</strong> (60 minute-$85; 30  minute $50): A  special massage used to alleviate the tension that accumulates during  physical activity. This massage is beneficial for the reduction of  muscle tension and for improving circulation. </p>
+      </div>   <!-- end .treatments -->
+	</div> <!-- end #content -->
+    
+    
+    <div id="line">
+		<div class="spacer"></div>
+		<div class="linetop"></div>
+		<div class="linemid"></div>
+		<div class="linebottom"></div>
+	</div> <!-- end #line -->
+	
+    
+	<div id="columntreat" class="narrow">
+    	<div class="spacer"></div>
+		<img src="images/massage.jpg" alt="massage" width="400" height="266" class="phototreat" />
+		<br class="clear" />  <!-- drops background texture pas height-min -->
+    </div><!-- end #column -->
+
+</div> <!-- end .container -->
+
+<div class="footer">
+    <span class="hours">Hours:</span>  &nbsp;<span class="colored">|</span>&nbsp;   Sunday: 10am-4pm  &nbsp;
+    <span class="colored">|</span>&nbsp;  Mon: Closed   &nbsp;
+    <span class="colored">|</span>&nbsp;   Tues: 8am-8pm  &nbsp;
+    <span class="colored">|</span>&nbsp;   Wed: 8am-6pm   &nbsp;
+    <span class="colored">|</span>&nbsp;   Thurs: 8am-8pm   &nbsp;
+    <span class="colored">|</span>&nbsp;   Friday: 10am-8pm   &nbsp;
+    <span class="colored">|</span>&nbsp;   Saturday: 10am-6pm  
+</div> <!-- end .footer -->
+
+<div class="endpage"></div>
+
+</body>
+</html>

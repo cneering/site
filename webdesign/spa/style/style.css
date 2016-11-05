@@ -1,0 +1,565 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+	color: #6F4D37;
+	font-family: CallunaSansRegular, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	/*background-color: #f2ca80;  */
+background: rgb(201,153,64); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(201,153,64,1) 0%, rgba(242,202,128,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,153,64,1)), color-stop(100%,rgba(242,202,128,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(201,153,64,1) 0%,rgba(242,202,128,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(201,153,64,1) 0%,rgba(242,202,128,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(201,153,64,1) 0%,rgba(242,202,128,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(201,153,64,1) 0%,rgba(242,202,128,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c99940', endColorstr='#f2ca80',GradientType=0 ); /* IE6-9 */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h3, h4, h5, h6, p  {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	line-height: 1.5em;
+}
+h1 {
+	color: #B88E50;
+	margin-top: 0px;
+	font-size: 70px;
+	font-family: Tangerine, 'TangerineBold';
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+
+
+h2 {
+	font-weight: bold;
+	color: #876321;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: Tahoma, Geneva, sans-serif;
+	padding-left: 15px;
+}
+.containertop h1 {
+	font-size: 10px;
+	width: 269px;
+	height: 100px;
+	position: relative;
+	color: #F00;
+	margin-top: -100px;
+}
+.logo {
+	margin-left: -20px;
+}
+#facebook {
+	position: absolute;
+	left: 800px;
+	top: 150px;
+	width: 45px;
+	height: 45px;
+	float: right;
+	z-index: 900;
+}
+#twitter {
+	position: absolute;
+	left: 863px;
+	top: 150px;
+	width: 45px;
+	height: 45px;
+	float: right;
+	z-index: 900;
+}
+#flourish1 {
+	position: absolute;
+	left: -193px;
+	top: 140px;
+	z-index: 900;
+	width: 200px;
+}
+#flourish2 {
+	position: absolute;
+	left: 971px;
+	top: 142px;
+	z-index: 900;
+	width: 200px;
+}
+#flourish3 {
+	position: absolute;
+	left: 50px;
+	top: 300px;
+	z-index: 900;
+	width: 200px;
+}
+
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #A84424;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a:visited {
+	color: #A84424;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #C43100;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #F8D38F;
+	border-right-width: 8px;
+	border-left-width: 8px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #A68D60;
+	border-left-color: #A68D60;
+	background-image: url(../images/paper.jpg);
+	position: relative;
+	background-repeat: repeat;
+	min-height: 860px;
+}
+.containertop {
+	width: 960px;
+	margin: 0 auto;
+
+}
+.top {
+	height: 100px;
+	background-color: #69512C;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #45351D;
+	position: relative;
+	background-image: url(../images/header.jpg);
+}
+
+#column {
+	float: left;
+	width: 316px;
+	padding-bottom: 10px;
+}
+#columntreat {
+	float: left;
+	padding-bottom: 10px;
+
+}
+#content {
+	float: left;
+	padding-top: 40px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+.wide {
+	width: 600px;
+}
+.narrow {
+	width: 440px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+#content ul, #content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 6px 0;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	text-align: center;
+	color: #593A00;
+	background-color: #A68D60;
+	font-weight: bold;
+	margin-bottom: 30px;
+	font-size: 13px;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #9D532F;
+	width: 960px;
+	margin: 0 auto;
+	border-right-width: 8px;
+	border-left-width: 8px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #A68D60;
+	border-left-color: #A68D60;
+}
+.endpage {
+	height: 300px;
+}
+
+
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.clear {
+	clear:both;
+}
+.topleft {
+	width: 500px;
+	float: left;
+	position: relative;
+}
+.topright {
+	float: left;
+	width: 460px;
+	
+	position: relative;
+}
+
+
+.login {
+	margin: -30px 0px 0px 370px;
+	color: #F2CA80;
+	float: left;
+
+}
+.login a:link, .login a:visited {
+	color: #F8D38F;
+}
+.login a:hover {
+	color: #EB5421;
+}
+#navcontainer
+{
+	background-color: #a84424;
+	height: 26px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #933D20;
+	position: relative;
+}
+
+
+/*
+#navcontainer ul
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	text-align: left;
+	margin: 0;
+	padding-bottom: 5px;
+	padding-top: 3px;
+}
+
+#navcontainer ul li
+{
+display: inline;
+margin-left: -4px;
+}
+
+#navcontainer ul li a
+{
+	padding: 5px 10px 6px 10px;
+	color: #3D3627;
+	text-decoration: none;
+}
+*/
+#navcontainer ul li a:hover
+{
+	background-color: #79321A;
+	color: #FFF;
+}
+#nav {
+	width: 960px;
+	margin: 0 auto;
+	letter-spacing: 1px;
+}
+
+#nav li {
+	float:left;
+	display:block;
+	background:#a84424;
+	position:relative;
+	z-index:500;
+	margin:0 1px;
+}
+
+	 
+/* this is the parent menu */
+#nav li a {
+	display:block;
+	padding:4px 10px 0 10px;
+	font-family: CallunaSansRegular, Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	height:23px;
+	text-decoration:none;
+	color:#fff;
+	text-align:center;
+	color:#f2ca80;
+}
+
+#nav li a:hover {
+	color:#fff;
+}
+     
+    /* you can make a different style for default selected value */
+#nav a.selected {
+	color:#f2ca80;
+	background-color: #79321A;
+}
+     
+/* submenu, it's hidden by default */
+#nav ul {
+	position:absolute;
+	left:0;
+	display:none;
+	margin:0 0 0 -1px;
+	padding:0;
+	list-style:none;
+}
+ 
+#nav ul li {
+	width:150px;
+	float:left;
+	border-top:1px solid #fff;
+}
+         
+        /* display block will make the link fill the whole area of LI */
+#nav ul a {
+	display:block;
+	height:15px;
+	padding: 8px 5px;
+	color:#F2CA80; /*pulldown link color*/
+}
+#nav ul a:hover {
+	text-decoration:none; 
+}
+.map {
+	background-color: #999;
+	width: 75px;
+	margin-left: 15px;
+	float: left;
+	margin-top: 3px;
+	border: 1px solid #A84424;
+}
+#map {
+	height: 216px;
+	background-color: #D8B77A;
+}
+#letter {
+	height: 200px;
+	background-color: #DFAF55;
+}
+#specials {
+	background-color: #C0CC71;
+}
+.spacer {
+	height: 145px;
+}
+.spacing {
+	letter-spacing: 1px;
+}
+
+.columnbox {
+	width: 200px;
+	float: left;
+	margin-left: 42px;
+	margin-top: 0px;
+	padding: 10px;
+	margin-bottom: 45px;
+	border: 1px solid #8F723A;
+}
+.columnbox h2 {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.columnbox p {
+	font-size: 12px;
+}
+
+input {
+	margin-left: 15px;
+	margin-bottom: 10px;
+	color: #A68753;
+	background-color: #F2CD89;
+	border: 1px solid #71582F;
+}
+input[type=submit] {
+	width: 70px; /* button width */
+	height: 25px;
+	float: left;
+	padding: 4px 15px 8px 15px;
+	margin: 0px 15px 0 60px;
+	border: 1px solid #71582F;
+	cursor: pointer;
+	font-size: 10px;
+	font-weight: bold;
+	color: #614F30;
+	letter-spacing: 1px;
+background: rgb(255,183,107); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,183,107,1) 0%, rgba(255,156,58,1) 50%, rgba(255,140,40,1) 52%, rgba(255,150,53,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,183,107,1)), color-stop(50%,rgba(255,156,58,1)), color-stop(52%,rgba(255,140,40,1)), color-stop(100%,rgba(255,150,53,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,156,58,1) 50%,rgba(255,140,40,1) 52%,rgba(255,150,53,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,156,58,1) 50%,rgba(255,140,40,1) 52%,rgba(255,150,53,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,156,58,1) 50%,rgba(255,140,40,1) 52%,rgba(255,150,53,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,156,58,1) 50%,rgba(255,140,40,1) 52%,rgba(255,150,53,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff9635',GradientType=0 ); /* IE6-9 */
+}
+
+.colored {
+	color: #F4D08E;
+}
+.hours {
+	color: #FFE0A8;
+}
+.treatments {
+	width: 400px;
+	float: left;
+}
+
+.image1 {
+	background-color: #999;
+	height: 130px;
+	width: 130px;
+	float: left;
+	margin: -40px 0px 50px 0px;
+}
+.image2 {
+	background-color: #999;
+	height: 170px;
+	width: 170px;
+	float: left;
+	margin: 0px 0px 50px 25px;
+}
+.image3 {
+	background-color: #999;
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin: 0px 0px 50px 0px;
+}
+.image4 {
+	background-color: #999;
+	height: 120px;
+	width: 120px;
+	float: left;
+	margin: 0px 0px 50px 70px;
+}
+.staff {
+	float: left;
+	width: 580px;
+}
+.insetphoto {
+	height: 367px;
+	width: 245px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 12px;
+	margin-bottom: 0px;
+	background-image: url(../images/beatrice.jpg);
+	background-repeat: no-repeat;
+	border: 1px solid #594218;
+}
+.photoinset {
+	float: left;
+	margin-right: 20px;
+	margin-left: 12px;
+	margin-bottom: 0px;
+	border: 1px solid #594218;
+}
+.phototreat {
+	float: left;
+	margin-right: 20px;
+	margin-left: 40px;
+	margin-bottom: 0px;
+	border: 1px solid #594218;
+}
+.phototreatvert {
+	float: left;
+	margin-right: 20px;
+	margin-left: 60px;
+	margin-bottom: 0px;
+	border: 1px solid #594218;
+}
+.phototour {
+	padding: 0px 0px 0px 0px;
+	margin: 40px 40px 0px 0px;
+	border: 1px solid #3E342A;
+}
+.tourtext {
+	margin-top: 10px;
+}
+
+#line {
+	float: left;
+	width: 4px;
+	height: 600px;
+}
+.linetop {
+	background-image: url(../images/linetop.png);
+	background-repeat: no-repeat;
+	width: 4px;
+	float: left;
+	height: 100px;
+	background-position: center top;
+}
+.linemid {
+	background-image: url(../images/linemid.png);
+	background-repeat: repeat-y;
+	width: 4px;
+	float: left;
+	height: 80%;
+	background-position: center top;
+}
+.linebottom {
+	background-image: url(../images/linebottom.png);
+	background-repeat: no-repeat;
+	width: 4px;
+	float: left;
+	height: 100px;
+	background-position: center bottom;
+}
+@font-face {
+    font-family: 'TangerineRegular';
+    src: url('../fonts/Tangerine_Regular-webfont.eot');
+    src: url('../fonts/Tangerine_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tangerine_Regular-webfont.woff') format('woff'),
+         url('../fonts/Tangerine_Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Tangerine_Regular-webfont.svg#TangerineRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TangerineBold';
+    src: url('../fonts/Tangerine_Bold-webfont.eot');
+    src: url('../fonts/Tangerine_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tangerine_Bold-webfont.woff') format('woff'),
+         url('../fonts/Tangerine_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Tangerine_Bold-webfont.svg#TangerineBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'CallunaSansRegular';
+    src: url('../fonts/CallunaSansRegular-webfont.eot');
+    src: url('../fonts/CallunaSansRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CallunaSansRegular-webfont.woff') format('woff'),
+         url('../fonts/CallunaSansRegular-webfont.ttf') format('truetype'),
+         url('../fonts/CallunaSansRegular-webfont.svg#CallunaSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

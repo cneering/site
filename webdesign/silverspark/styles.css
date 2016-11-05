@@ -1,0 +1,446 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 Calluna Sans, CallunaSansRegular, Verdana, Arial, Helvetica, sans-serif;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	color: #565F65;
+	font-size: 16px;
+}
+.tangerine {
+	font-family: Tangerine;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+h1 {
+	color: #6FB5C4;
+	font-size: 70px;
+	margin-top: 30px;
+	margin-bottom: 6px;
+	font-family: Tangerine, 'TangerineBold';
+	margin-left: -10px;
+	font-weight: normal;
+
+}
+h2 {
+	font-family: Tangerine, 'TangerineBold';
+	color: #6FB5C4;
+	margin: 40px 0 4px -2px;
+	font-size: 46px;
+}
+
+h3 {
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	color: #6FB5C4;
+	text-align: left;
+	margin-left: 7px;
+	margin-top: 12px;
+}
+#about {
+	margin-left: 100px;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #BED0D4;
+	background-image: url(images_logo/header3.jpg);
+}
+
+
+
+.header img {
+	padding: 10px 10px 10px 23px;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 980px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	position: relative;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+.content a:link {
+	color: #F00;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+.content a:visited {
+	color: #F00;
+	text-decoration: underline;
+}
+.content a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 20px;
+	background-image: url(images_logo/content_gradient.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+
+}
+.content2 {
+	padding: 10px 20px 10px 50px;
+	background-image: url(images_logo/content_gradient.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+
+}
+#ornament {
+	border-top-width: 6px;
+	border-top-style: solid;
+	border-bottom-style: none;
+	border-top-color: #c5d7db;
+	background-image: url(transparent_ornaments/ornament10.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 53px;
+	background-color: #BED0D4;
+	float: left;
+	width: 980px;
+	margin: 0;
+	padding: 0px;
+
+
+}
+
+
+
+/* ~~ The footer ~~ */
+.footer {
+	height: 22px;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+	background-color: #9ec3cb;
+	float: left;
+	width: 980px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	color: #839B9E;
+	letter-spacing: 1px;
+	text-align: center;
+	-moz-border-radius: 0px 0px 20px 20px;
+	-webkit-border-radius: 0px 0px 20px 20px;
+	border-radius: 0px 0px 20px 20px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+}
+.textbox {
+	padding: 5px;
+	width: 460px;
+	float: left;
+}
+.textbox2 {
+	padding: 5px;
+	width: 460px;
+	float: left;
+	width: 700px;
+	margin-left: 105px;
+	margin-top: 20px;
+	margin-right: 100px;
+	margin-bottom: 0px;
+	
+}
+.textbox3 {
+	padding: 0 5px 0 5px;
+	width: 460px;
+	float: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #BDCFD3;
+}
+.jewelry {
+	width: 220px;
+	float: left;
+	margin-right: 15px;
+}
+.ptop {
+	margin-top: -5px;
+}
+.pbottom {
+	margin-bottom: -5px;
+}
+
+
+.itemswrapper img {
+	border: 1px solid #BCCFD3;
+}
+.jewelry3 {
+	width: 220px;
+	float: left;
+	margin-right: 15px;
+	margin-left: 115px;
+}
+
+.itemswrapper {
+	width: 950px;
+	margin: 35px  0 0 10px;
+}
+
+.bar {
+	width: 800px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #BED0D4;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.description {
+	font-size: 12px;
+	margin-left: 7px;
+	margin-top: -12px;
+}
+.price {
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #6FB5C4;
+	margin-left: 7px;
+	margin-top: -8px;
+}
+#topbar {
+	background-color: #616C73;
+	height: 10px;
+}
+#gradient {
+	background: #d5e1e3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #BED0D4 25%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#BED0D4), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #BED0D4 25%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #BED0D4 25%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #BED0D4 25%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(top,  #BED0D4 25%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BED0D4', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+#nav {
+	background-color: #616C73;
+	height: 24px;
+	font-family: "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #008EBB;
+
+}
+#nav ul {
+	list-style: none;
+	padding: 1px 0 0px 15px;
+	margin: 0;
+}
+#nav li {
+	float: left;
+	font-weight: normal;
+	padding: 0px 2px 6px 2px;
+
+}
+	
+li a:link {
+	color:#C7EBEA;
+	text-decoration: none;
+}
+li a:visited {
+	color: #C7EBEA;
+}
+li a:hover, li a:active, li a:focus {
+	text-shadow: 0 0 3px #353a3e;
+	color: #60E1C2;
+} 
+.current {
+	color: #fff; /* W3C */
+}
+
+@font-face {
+    font-family: 'TangerineBold';
+    src: url('fonts/Tangerine_Bold-webfont.eot');
+    src: url('fonts/Tangerine_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/Tangerine_Bold-webfont.woff') format('woff'),
+url('fonts/Tangerine_Bold-webfont.ttf') format('truetype'),
+url('fonts/Tangerine_Bold-webfont.svg#TangerineBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/raleway_thin-webfont.eot');
+    src: url('fonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/raleway_thin-webfont.woff') format('woff'),
+url('fonts/raleway_thin-webfont.ttf') format('truetype'),
+url('fonts/raleway_thin-webfont.svg#raleway') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'CallunaSansRegular';
+    src: url('fonts/CallunaSansRegular-webfont.eot');
+    src: url('fonts/CallunaSansRegular-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/CallunaSansRegular-webfont.woff') format('woff'),
+url('fonts/CallunaSansRegular-webfont.ttf') format('truetype'),
+url('fonts/CallunaSansRegular-webfont.svg#CallunaSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#accent {
+	float: right;
+	height: 115px;
+	width: 115px;
+	position: absolute;
+	left: 836px;
+	top: 425px;
+	z-index: 10;
+}
+#accent2 {
+	height: 335px;
+	width: 322px;
+	position: absolute;
+	left: 594px;
+	top: 197px;
+}
+#accent3 {
+	height: 260px;
+	width: 120px;
+	position: absolute;
+	left: 613px;
+	top: 678px;
+}
+#accent4 {
+	height: 305px;
+	width: 670px;
+	position: absolute;
+	left: 145px;
+	top: 110px;
+}
+#accent5 {
+	height: 475px;
+	width: 631px;
+	position: absolute;
+	left: 338px;
+	top: 149px;
+	z-index: 1;
+}
+#accent6 {
+	float: right;
+	height: 115px;
+	width: 112px;
+	position: absolute;
+	left: 757px;
+	top: 9px;
+	z-index: 10;
+}
+#accent7 {
+	float: right;
+	height: 97px;
+	width: 107px;
+	position: absolute;
+	left: 644px;
+	top: -13px;
+	z-index: 10;
+}
+#accent8 {
+	float: right;
+	height: 77px;
+	width: 79px;
+	position: absolute;
+	left: 878px;
+	top: -1px;
+	z-index: 10;
+}
+#accent9 {
+	float: right;
+	height: 77px;
+	width: 79px;
+	position: absolute;
+	left: 562px;
+	top: 25px;
+	z-index: 10;
+}
+#accent10 {
+	float: right;
+	height: 77px;
+	width: 79px;
+	position: absolute;
+	left: 316px;
+	top: 144px;
+	z-index: 10;
+}
+#accent11 {
+	float: right;
+	height: 40px;
+	width: 118px;
+	position: absolute;
+	left: 831px;
+	top: 394px;
+	z-index: 10;
+}
+#accent12 {
+	float: right;
+	height: 276px;
+	width: 263px;
+	position: absolute;
+	left: 708px;
+	top: 494px;
+	z-index: 10;
+}#accent13 {
+	float: right;
+	height: 356px;
+	width: 84px;
+	position: absolute;
+	left: 1083px;
+	top: 792px;
+	z-index: 10;
+}
+.contact {
+	font-size: 20px;
+	font-weight: normal;
+	margin-left: -4px;
+	margin-top: -20px;
+}

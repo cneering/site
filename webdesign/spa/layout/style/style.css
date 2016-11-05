@@ -1,0 +1,293 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+	color: #3B2B20;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #CCC;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h3, h4, h5, h6, p  {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+h1 {
+	color: #333;
+	margin-top: -10px;
+	font-weight: bold;
+}
+h2 {
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: Tahoma, Geneva, sans-serif;
+	padding-left: 15px;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #00C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a:visited {
+	color: #0CF;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+.containertop {
+	width: 960px;
+	margin: 0 auto;
+	font-size: 36px;
+
+}
+.top {
+	height: 60px;
+	background-color: #999;
+}
+
+.wrapper {
+	background-repeat: repeat-x;
+	height: 100px;
+}
+
+#column {
+	float: left;
+	width: 320px;
+	padding-bottom: 10px;
+}
+#content {
+	width: 600px;
+	float: left;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+#content ul, #content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+	font-weight: bold;
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+	float: left;
+	
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	color: #4189A6;
+	background-color: #999;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 6px 0;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	text-align: center;
+	color: #CCC;
+	background-color: #666;
+	font-weight: bold;
+	margin-bottom: 30px;
+	font-size: 13px;
+}
+
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+div#navcontainer
+{
+	background-color: #CCC;
+}
+.login {
+	padding-left: 220px;
+}
+.homeimage {
+	background-color: #999;
+	height: 100px;
+	width: 580px;
+	margin-bottom: 30px;
+}
+
+.facebook {
+	background-color: #666;
+	height: 25px;
+	width: 80px;
+	float: right;
+	margin-top: -30px;
+	margin-right: 30px;
+	font-size: 13px;
+	color: #CCC;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+
+
+div#navcontainer ul
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	text-align: left;
+	margin: 0;
+	padding-bottom: 5px;
+	padding-top: 3px;
+}
+
+div#navcontainer ul li
+{
+display: inline;
+margin-left: -4px;
+}
+
+div#navcontainer ul li a
+{
+	padding: 5px 10px 6px 10px;
+	color: #3D3627;
+	text-decoration: none;
+}
+
+div#navcontainer ul li a:hover
+{
+	background-color: #666;
+	color: #FFF;
+}
+
+#active a {
+	background-color: #999;
+}
+
+.box {
+	background-color: #999;
+	height: 75px;
+	width: 75px;
+	margin-left: 15px;
+	float: left;
+	margin-top: -10px;
+}
+.mapit {
+	float: left;
+	margin-top: 40px;
+}
+#map {
+	height: 250px;
+}
+#letter {
+	height: 200px;
+}
+#specials {
+
+}
+#spacer {
+	height: 30px;
+}
+.columnbox {
+	width: 280px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+input {
+	margin-left: 15px;
+}
+.colored {
+	color: #333;
+}
+.treatments {
+	width: 400px;
+	float: left;
+}
+
+.image1 {
+	background-color: #999;
+	height: 130px;
+	width: 130px;
+	float: left;
+	margin: -40px 0px 50px 0px;
+}
+.image2 {
+	background-color: #999;
+	height: 170px;
+	width: 170px;
+	float: left;
+	margin: 0px 0px 50px 25px;
+}
+.image3 {
+	background-color: #999;
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin: 0px 0px 50px 0px;
+}
+.image4 {
+	background-color: #999;
+	height: 120px;
+	width: 120px;
+	float: left;
+	margin: 0px 0px 50px 70px;
+}
+.staff {
+	float: left;
+	width: 580px;
+}
+.staffphoto {
+	background-color: #999;
+	height: 125px;
+	width: 125px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 12px;
+	margin-bottom: 30px;
+}
+.phototour {
+	background-color: #999;
+	height: 350px;
+	width: 570px;
+	margin-left: 10px;
+	margin-top: -10px;
+}
+.tourtext {
+	margin-top: 10px;
+}

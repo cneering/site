@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>The Singing Crab</title>
+<link href="style/style2.css" rel="stylesheet" type="text/css" />
+<link href="style/s3slider.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="js/s3Slider.js"></script>  <!-- slideshow  -->
+<script type="text/javascript">  <!-- menus  -->
+	$(document).ready(function () {
+		$('#nav li').hover(
+				function () {
+						//show its submenu
+						$('ul', this).slideDown(100);
+ 
+				},
+				function () {
+						//hide its submenu
+						$('ul', this).slideUp(100);        
+				}
+		);
+});
+</script>  <!-- end menus  -->
+<script type="text/javascript">  <!-- rollovers  -->
+<!--
+function MM_swapImgRestore() { //v3.0
+	var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+	var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+	var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	 if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>  <!-- end rollovers  -->
+<script type="text/javascript">  <!-- start slideshow -->
+$(document).ready(function() {
+	 $('#s3slider').s3Slider({
+			timeOut: 2500
+	 });
+}); 
+</script>  <!-- end slideshow -->
+</head>
+
+<body  onload="MM_preloadImages('images/menuhome_on.png', 'images/menuabout_on.png', 'images/menufood_on.png', 'images/menumenu_on.png', 'images/menucajun_on.png', 'images/menuchili_on.png', 'images/menufun_on.png', 'images/menumardi_on.png', 'images/menuparty_on.png', 'images/menucontact_on.png')">
+
+<div id="bgimage"> <!-- mesh bg -->
+	<div class="top">
+		<div class="containertop">
+			<div class="topleft">
+				<h1>The Singing Crab</h1>
+				<div id="fire1"><img src="images/firetopleft.png" alt="fire1" width="188" height="240" /></div>
+				<div id="fire2"><img src="images/firetopright.png" alt="fire2" width="226" height="240" /></div>
+				<div id="fire3"><img src="images/firesmallleft.png" alt="fire3" width="142" height="137" /></div>
+				<div id="fire4"><img src="images/firesmallright.png" alt="fire4" width="115" height="208" /></div>
+				<a href="index.html" id="homeclick"></a>
+			</div>
+		</div> <!-- end .containertop -->
+	</div> <!-- end .top -->
+	
+	<div id="navcontainer">
+		<ul id="nav">
+			<li><a href="index.html" class="selected"><img src="images/menuhome_on.png" alt="home" id="home" /></a></li>
+			<li><a href="about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('about','','images/menuabout_on.png',1)"><img src="images/menuabout.png" alt="about"  id="about" /></a></li>
+			<li><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('food','','images/menufood_on.png',1)"><img src="images/menufood.png" alt="food" id="food" /></a>
+				<ul>
+					<li><a href="menu.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu','','images/menumenu_on.png',1)"><img src="images/menumenu.png" alt="menu"  id="menu" /></a></li>
+					<li><a href="cajun.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cajun','','images/menucajun_on.png',1)"><img src="images/menucajun.png" alt="cajun" id="cajun" /></a></li>
+					<li><a href="chili.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('chili','','images/menuchili_on.png',1)"><img src="images/menuchili.png" alt="chili" id="chili" /></a></li>
+				</ul>
+				<div class="clear"></div>
+			</li>
+			<li><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fun','','images/menufun_on.png',1)"><img src="images/menufun.png" alt="fun" id="fun" /></a>
+					<ul>
+						<li><a href="mardi.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('mardi','','images/menumardi_on.png',1)"><img src="images/menumardi.png" alt="mardi" id="mardi" /></a></li>
+						<li><a href="party.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('party','','images/menuparty_on.png',1)"><img src="images/menuparty.png" alt="party" id="party" /></a></li>
+					</ul>
+					<div class="clear"></div>
+			</li>
+			<li><a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact','','images/menucontact_on.png',1)"><img src="images/menucontact.png" alt="contact" id="contact" /></a></li>
+		</ul>
+	</div> <!-- end #nav -->
+			
+
+
+
+	<div class="wrapper">
+		<div class="wrapper1">
+			<div class="wrapper2">
+				<div class="fencel"></div>  <!-- end #fencel / this pushes container div to right to show fence background -->
+				<div class="container">
+						 
+					<div id="content" class="full">
+						<h1>Home</h1>
+							<div id="s3slider">
+								<ul id="s3sliderContent">
+									<li class="s3sliderImage">
+											<img src="images/1.jpg" alt="inside" />
+											<span>Come join us inside</span>
+									</li>
+									<li class="s3sliderImage">
+											<img src="images/3.jpg" alt="crawfish"  />
+											<span>The best crawfish boil you've ever had</span>
+									</li>
+									<li class="s3sliderImage">
+											<img src="images/4.jpg" alt="yummy"  />
+											<span>Delicious</span>
+									</li>
+									<li class="s3sliderImage">
+											<img src="images/5.jpg" alt="bar"  />
+											<span>Pony up to the bar</span>
+									</li>
+									<li class="s3sliderImage">
+											<img src="images/6.jpg" alt="hotsauce"  />
+											<span>Knock your taste buds out</span>
+									</li>
+									<li><div class="clear s3sliderImage"></div></li>
+								 </ul>
+							</div>
+													<div class="home">
+															<img src="images/titlearriba.png" width="179" height="60" alt="arriba!" class="pushright" />
+						<p>There’s always a fiesta at The Singing Crab—The best Cajun food Louisiana has to offer! Heavy on the spices, The Singing Crab has the absolute best that Cajun has to offer. </p>
+							<p>If you have a weakness for boiled seafood, sweet corn, shrimp and have a craving for crabs and anything spicy, than swing on by The Singing Crab. Pull up a bench, strap on your lobster bib, and dig into our award-winning Cajun dishes full of herbs and spices. Yum!</p>
+						<h2 class="transparent">Newsletter</h2>
+									<p>Enter your email address to hear about our latest recipies. We're always cooking up new stuff!</p>
+									<input type="text" name="email" maxlength="80" size="36" value="Email Address" class="input" />
+									<!-- <input type="image" src="images/clear.png" alt="submit" name="submit" class="button" /> -->  <!-- allows removal of OS button graphics -->
+									<button type="submit" value="Submit" class="button">Submit</button>
+									<br class="clear" />
+						<a href="www.facebook.com"><img src="images/facebook_small.png" alt="facebook" width="50" height="50" class="follow" /></a>
+															<a href="twitter.com"><img src="images/twitter_small.png" alt="twitter" width="50" height="50" class="follow" /></a> 
+															<p class="followtext">Follow us for the latest<br />
+															updates and specials</p>    
+												</div><!-- end .home -->
+												<div class="home2">
+						<div class="address">
+							<a href="contact.html"><span>The Singing Crab</span><br />
+							75632 North Flannery Road <br />
+							Baton Rouge, Louisiana 70802 <br />
+								Click to Map It!</a>
+						</div>
+						<p class="pushdown2">Call for reservations or takeout <br />
+							255-555-1234</p> 
+						<p>Email us:</p>
+						<div class="linktrans"><a href="mailto:info@thesingingcrab.com">info@thesingingcrab.com</a></div>
+															<br />
+															<p>Hours: <br />
+															Mon-Thur 11am-10pm<br />
+															Fri-Sat 11am-11pm</p>
+												</div><!-- end .home2 -->
+											</div><!-- end #content -->
+											<br class="clear" />  <!-- drops background texture pas height-min -->
+												<div class="footer">
+							<p><a href="index.html">Home</a> <span class="colored">|</span><a href="about.html">About</a> <span class="colored">|</span><a href="menu.html">Menu</a> <span class="colored">|</span><a href="cajun.html">Cajun Food</a> <span class="colored">|</span><a href="chili.html">Chili Recipe</a> <span class="colored">|</span>  <a href="mardi.html">Mardi Gras</a> <span class="colored">|</span><a href="party.html">Party Time!</a> <span class="colored">|</span><a href="contact.html">Contact</a></p>
+						</div> <!-- end .footer -->
+					</div> <!-- end .container -->
+				<div class="fencer"></div>  <!-- end #fencer / this pushes fencer div out to show fence background -->
+			</div> <!-- end .wrapper2 -->
+		</div> <!-- end .wrapper1 -->
+				<br class="clear" />  <!-- drops background texture pas height-min -->
+	</div><!-- end .wrapper -->
+</div> <!-- end #bgimage -->
+</body>
+</html>
