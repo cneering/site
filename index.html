@@ -19,7 +19,7 @@
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
 	<!-- // <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
 	 <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -44,16 +44,12 @@
 					scrollTop: totalScroll
 				}, 800);
 			}
-
 			$(".fancy").fancybox({
 				openEffect: 'fade',
 				closeEffect: 'fade',
 				padding: 5
 			});
-
-			// hide #back-top first
 			$("#back-top").hide();
-			// fade in #back-top
 			$(function () {
 				$(window).scroll(function () {
 					if ($(this).scrollTop() > 100) {
@@ -62,17 +58,7 @@
 						$('#back-top').fadeOut();
 					}
 				});
-				// $('#back-top a').click(function () {
-				// 	$('body,html').animate(
-				// 	{
-				// 		scrollTop: 0
-				// 	}, {
-				// 		duration: 800,
-				// 		easing: 'swing'
-				// 	});
-				// 	return false;
-				// });
-				$('#back-top a').click(function () {
+				$('#back-top').click(function () {
 					$('body,html').animate({
 						scrollTop: 0
 					}, 1800, 'swing');
@@ -213,7 +199,7 @@
 			<h3>Beatrice <span class="blue">Spa</span></h3>
 			<p>Project: Design a site for a client called Beatrice Spa & Beauty Salon, conduct a competitive analysis of competitor sites. Support the client's stated business goals.</p>
 			<p>Role: Front End Design, Page Layouts, Wireframes, Site Map, Mood Board, XHTML, CSS, JavaScript and jQuery.</p>
-			<p><a href="http://neeringdesign.com/webdesign/spa/index.html" target="_blank" class="portlink">WEBSITE</a></p>
+			<a href="http://neeringdesign.com/webdesign/spa/index.html" target="_blank" class="portlink">WEBSITE</a>
 		</div><!--end .portdesc -->
 		<div class="portline"></div>
 		
@@ -229,7 +215,7 @@
 			<h3>Silver Spark <span class="blue">Jewelry</span></h3>
 			<p>Project: Designed the clients website using provided images, created a soft elegant look to compliment the jewelry.</p>
 			<p>Role: Front End Design, XHTML and CSS.</p>
-			<p><a href="webdesign/silverspark/index.html" target="_blank" class="portlink">WEBSITE</a></p>
+			<a href="webdesign/silverspark/index.html" target="_blank" class="portlink">WEBSITE</a>
 		</div><!--end .portdesc -->
 		<div class="portline"></div>
 		
@@ -245,7 +231,7 @@
 			<h3>Killer <span class="blue">Flamingos</span></h3>
 			<p>Project: Redesign the Killer Flamingos website to meet the functional and/or visual needs of the client, alter the layout structure, navigation, color scheme and graphics. I also redesigned their logo.</p>
 			<p>Role: Front End Design, XHTML and CSS.</p>
-			<p><a href="webdesign/flamingos/flamingos.html" target="_blank" class="portlink">WEBSITE</a></p>
+			<a href="webdesign/flamingos/flamingos.html" target="_blank" class="portlink">WEBSITE</a>
 		</div><!--end .portdesc -->
 		<div class="portline"></div>
 		
@@ -451,9 +437,8 @@
 
 	<h2>Contact <span class="blue">Info</span></h2>
 	<div id="contact">
-		<p>I am currently available for part time freelance work. Please contact me to inquire about rates and availability. Also feel free to leave me a message if you'd like to say hello or ask a question. Thanks for looking!</p>
-		<br />
-		<form name="contactform" method="post" action="send_form_email.php">
+		<p>I am currently available for part time freelance work. Please contact me to inquire about rates and availability. Thanks for looking!</p>
+<!-- 		<form name="contactform" method="post" action="send_form_email.php">
 			<label for="first_name">First Name</label>
 			<input  type="text" name="first_name" id="first_name" placeholder="Enter your first name" class="input">
 			<label for="last_name">Last Name</label>
@@ -465,11 +450,11 @@
 			<label for="comments">Comments</label>
 			<textarea  name="comments"  id="comments" placeholder="Leave me a message"></textarea>
 			<input type="submit" value="Submit" class="button">
-		</form>
+		</form> -->
 		<div class="contactme">
 			<p>Craig Neering <br />
 			Superior, Colorado<br />
-			<a href="mailto:kinetic8@gmail.com" class="email">kinetic8@gmail.com</a></p>			
+			<a href="mailto:kinetic8@gmail.com" class="email"><i class="fa fa-envelope-o"></i>kinetic8@gmail.com</a></p>			
 		</div>
 		<br class="clear" />
 	</div>
@@ -478,9 +463,10 @@
 	<br class="clear" />
 </section><!-- end capsule -->
 
-<p id="back-top">
-	<a href="#top"><span></span></a>
-</p>
+<div id="back-top">
+	<!-- <a href="#top"><span></span></a> -->
+	<i class="fa fa-arrow-circle-o-up"></i>
+</div>
 
 <div id="footer">
 	<nav>

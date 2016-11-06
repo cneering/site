@@ -297,7 +297,7 @@ a {
 .contactme { 
 	height: 400px;
 	width: 165px;
-	margin: 5px 0 26px 70px;
+	/*margin: 5px 0 26px 70px;*/
 	float: left;
 	line-height: 175%;
 }
@@ -316,16 +316,30 @@ a {
 	letter-spacing: 0.55px;
 	font-family: "angie-sans",sans-serif;
 }
-/*.resume {
-	margin: 50px 0 0 0px;
-}*/
 .blue { color:#00B3CC }
-/*.resume a:link, .resume a:visited,*/ .email:link, .email:visited {
+.email:link, .email:visited {
 	color:#00B3CC;
 	font-weight: 500;
+	-webkit-transition: all 0.22s ease-in-out 0s;
+	-moz-transition: all 0.22s ease-in-out 0s;
+	-ms-transition: all 0.22s ease-in-out 0s;
+	-o-transition: all 0.22s ease-in-out 0s;
+	transition: all 0.22s ease-in-out 0s;
 }
-/*.resume a:hover, .resume a:active,*/ .email:hover, .email:active {
-	color:#82e4f2;
+.email:link i, .email:visited i {
+	color:#fff;
+	padding-right: 8px;
+	-webkit-transition: all 0.22s ease-in-out 0s;
+	-moz-transition: all 0.22s ease-in-out 0s;
+	-ms-transition: all 0.22s ease-in-out 0s;
+	-o-transition: all 0.22s ease-in-out 0s;
+	transition: all 0.22s ease-in-out 0s;
+}
+.email:hover, .email:active {
+	color:#fff;
+}
+.email:link:hover i, .email:visited:hover i {
+	color:#00B3CC;
 }
 .homespacer {
 	margin-top: 15px;
@@ -401,14 +415,34 @@ a {
 	-o-transition: all 0.22s ease-in-out 0s;
 	transition: all 0.22s ease-in-out 0s;
 	display: block;
-	padding: 2px 20px 2px 15px;
-	background-image:url(../images/link_accent.jpg);
+	padding: 0px 20px 2px 0px;
+	/*background-image:url(../images/link_accent.jpg);*/
+	content:"\f08e";
 	background-repeat:no-repeat;
 	background-position:left center;
 }
-.portlink:hover  {
-	background-image:url(../images/link_accent_d.jpg);
+.portlink:before {
+	font-family: FontAwesome;
+	content:"\f08e";
+	padding-right: 3px;
+	padding-top: 3px;
+	float: left;
+	font-size: 14px;
 }
+#portfolio .portdesc .portlink:before {
+	-webkit-transition: all 0.22s ease-in-out 0s;
+	-moz-transition: all 0.22s ease-in-out 0s;
+	-ms-transition: all 0.22s ease-in-out 0s;
+	-o-transition: all 0.22s ease-in-out 0s;
+	transition: all 0.22s ease-in-out 0s;
+	color: white !important;
+}
+#portfolio .portdesc .portlink:hover:before {
+	color: #00B3CC !important;
+}
+/*.portlink:hover  {
+	background-image:url(../images/link_accent_d.jpg);
+}*/
 
 
 /*--------------Form-----------------*/
@@ -539,10 +573,9 @@ textarea:-moz-placeholder {
 /* --------------SCROLL TOP------------------- */
 #back-top {
 	position: fixed;
-	bottom: 0px;
-	/*right: 14%;*/
-	left: 50%;
-	width: 455px;
+	bottom: 55px;
+	left: calc(50% + 420px);
+	width: 100px;
 }
 
 #back-top a {
@@ -572,21 +605,18 @@ textarea:-moz-placeholder {
 	margin-bottom: 7px;
 	background: url(../images/up-arrow-round.png) no-repeat center center;
 	background-size: 100%;
-	/* rounded corners */
-	/*-webkit-border-radius: 15px;*/
-	/*-moz-border-radius: 15px;*/
-	/*border-radius: 15px;*/
-	/*border: solid 2px rgb(52, 52, 52);*/
+}
 
-	/* transition */
+#back-top i {
+	font-size: 50px;
+	color: #696969;
 	-webkit-transition: 1s;
 	-moz-transition: 1s;
 	transition: 1s;
 }
-#back-top a:hover span {
-	/*background-color: #777;*/
+#back-top:hover i {
+	color: #fff;
 }
-
 
 /* --------------MISC------------------- */
 .clear {

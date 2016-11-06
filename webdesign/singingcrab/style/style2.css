@@ -12,18 +12,17 @@ html {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b0000', endColorstr='#910202',GradientType=0 );
 	/*  height: 1600px;  */
 	height: 100%;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	color: #5B361E;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: normal;
+	color: #3b1700;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 600;
 	line-height: 1.4;
 	background-image: url(../images/grill.png);
 	background-repeat: repeat;
@@ -82,7 +81,7 @@ h1, h3, h4, h5, h6, p  {
 
 h2 {
 	font-weight: bold;
-	color: #734818;
+	color: #4a1600;
 	margin-bottom: 0px;
 	margin-top: 0px;
 	font-family: Helvetica, Arial, sans-serif;
@@ -143,13 +142,22 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	text-align: right;
 	margin: 0 20px 0 0;
 }
-.upperright a:link, .upperright a:visited {
-	-webkit-transition: all .2s ease-in-out;
+.orderOnline {
+	font-size: 26px;
+		-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;	
 	transition: all .2s ease-in-out;	
 	display: inline-block;
+}
+.upperright a:link, .upperright a:visited {
+/*	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;	
+	transition: all .2s ease-in-out;	
+	display: inline-block;*/
 }
 
 .upperright a:hover, .upperright a:active, .upperright a:focus {
@@ -279,8 +287,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
 	text-align: center;
 	color: #593A00;
-	background-color: #692C16;
-	font-weight: normal;
+	background-color: rgba(97, 26, 0, 0.74);
+	font-weight: 600;
 	margin-bottom: 0px;
 	font-size: 14px;
 	width: 944px;
@@ -296,7 +304,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin-bottom: 0;
 }
 .footer a {
-	color: #FDBE58;
+	color: #fac672;
+	text-shadow: 0 0 5px #210d00;
 }
 .footer a:hover {
 	color:#FFF;
@@ -445,6 +454,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	float: left;
 	width: 250px;
 	margin-top: 63px;
+	background: rgba(238, 228, 205, 0.21);
+	padding: 12px 3px;
 }
 .follow {
 	margin-top: 20px;
@@ -485,7 +496,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	-ms-transition: all .2s ease-in-out;	
 	transition: all .2s ease-in-out;
 	display: inline-block;
-	font-weight: normal;
+	font-weight: 700;
 }
 
 .linktrans a:hover, .linktrans a:active, .linktrans a:focus {
@@ -507,7 +518,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	-ms-transition: all .2s ease-in-out;	
 	transition: all .2s ease-in-out;	
 	display: inline-block;
-	font-weight: normal;
+	font-weight: 700;
 }
 .address span {
 	font-weight: bold;
@@ -547,7 +558,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin: 0px 0 0 0;
 }
 .menu p {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
 }
@@ -555,8 +566,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-size: 14px;
 }
 .menuitem {
-	font-weight: bold;
 	color: #872B0C;
+	font-size: 14px !important;
+	font-weight: bold;
 	margin: 20px 0 0 0;
 }
 .pushdown {
