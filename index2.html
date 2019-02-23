@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Neering Design &bull; Web Design &bull; Front End Development</title>
+	<meta name="description" content="Neering Design &bull; Web Design &bull; Front End Development &bull; Craig Neering">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="css/mQuery.css" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#000000">
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+	<!-- // <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+	 <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/oig2mfj.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="js/modernizr-latest.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('nav a, a.design2').click(function(){  
+				var el = $(this).attr('href');
+				var elWrapped = $(el);
+				scrollToDiv(elWrapped,165);
+				return false;
+			}); 
+			function scrollToDiv(element,navheight){
+				var offset = element.offset();
+				var offsetTop = offset.top;
+				var totalScroll = offsetTop-navheight;
+				
+				$('body,html').animate({
+					scrollTop: totalScroll
+				}, 800);
+			}
+			$(".fancy").fancybox({
+				openEffect: 'fade',
+				closeEffect: 'fade',
+				padding: 5
+			});
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 1800, 'swing');
+					return false;
+				});
+			});
+		});
+	</script>
+</head>
+
+
+<body>
+
+<div id="top">
+	<header>
+		<h1>
+			<a href="index.html" title="Neering Design - Home" alt="Neering Design | Web Designer and Front End Development">
+				<img src="images/logo.png" class="logoGraphic" alt="logo">
+				<!-- NEERING<span class="thin">DESIGN</span> -->
+				<span class='hl01 headerLetter thick'>N</span>
+				<span class='hl02 headerLetter thick'>E</span>
+				<span class='hl03 headerLetter thick'>E</span>
+				<span class='hl04 headerLetter thick'>R</span>
+				<span class='hl05 headerLetter thick'>I</span>
+				<span class='hl06 headerLetter thick'>N</span>
+				<span class='hl07 headerLetter thick'>G</span>
+				<span class="hl08 headerLetter thin">D</span>
+				<span class="hl08 headerLetter thin">E</span>
+				<span class="hl08 headerLetter thin">S</span>
+				<span class="hl08 headerLetter thin">I</span>
+				<span class="hl08 headerLetter thin">G</span>
+				<span class="hl08 headerLetter thin">N</span>
+			</a>
+		</h1>
+	</header>	
+</div>
+
+<section id="capsule">
+	<div id="navdiv" class="alpha60">
+		<nav>
+			  <ul id="nav">
+				<li class="navhome mobilehide"><a href="#craig" class="current">Home</a></li>
+				<li class="navport"><a href="#port1">Web</a></li>
+				<li class="navport"><div class="navLine"></div><a href="#port2">Graphic</a></li>
+				<li class="navport"><div class="navLine"></div><a href="#port3">Games</a></li>
+				<li class="navabout mobilehide"><a href="#abouttest">About</a></li>
+				<li class="navcontact mobilehide"><a href="#contact">Contact</a></li> 
+			  </ul> 
+		</nav> 
+	</div>
+	
+	<div id="craig">
+		<h1>FRONT END WEB <span class="blue">DESIGN & DEVELOPEMENT</span></h1>
+	</div>
+	
+	<div class="line linepush2"></div>
+	<br class="clear" />
+  
+	<h2>Hello <span class="blue">There</span></h2>
+	<div id="home">
+		<p>Thanks for visiting Neering Design, this is the artist portfolio for Craig Neering. Here you will find a few select samples of my digital artwork.</p>
+		<p>I love all aspects of design, color, composition and continue to tinker with code to find new and better ways to build web sites. You will find that this site has been built with responsive design to maximize the accessibility of users on both desktops and mobile devices.</p>
+		<p>Please feel free to check out my portfolio and explore some of the work I’ve posted on the site.</p>
+	</div>
+  
+	<div class="homespacer"></div>
+	
+	<a href="#port1" class="design2">Web Design</a>
+	<a href="#port2" class="design2">Graphic Design</a>
+	<a href="#port3" class="design2">Game Design</a>
+	
+	<div class="line linepush"></div>
+	<br class="clear" />
+	<p class="quote blue mobilehide">Simplicity is the ultimate form of sophistication.</p>
+	<p class="author mobilehide" id="about2">Leonardo di Vinci</p>
+	<div class="line linepush2"></div>
+	<br class="clear" />
+	
+
+
+
+
+	
+	<div id="portfolio">
+
+		<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+		<h2 id="port1">Web <span class="blue">Design</span></h2>
+		<br class="clear" />
+		<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+		<!-- thumb class allows use of fancyBox, rel attribute groups them together - added to links -->
+		
+		<div class="h4wrap"><h4  id="web" class="setweb mobilehide">Web</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/webcrab.jpg" alt="Singing Crab Website" />
+			<a href="images/portfolio/webcrab_large.jpg" data-fancybox-group="crab" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+			<div class="hidden">
+				<a href="images/portfolio/webcrab_mood.jpg" data-fancybox-group="crab" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Singing Crab Website"></a>
+			</div><!-- end .hidden -->
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Singing <span class="blue">Crab</span></h3>
+			<p>Project: Design a site for a client called the Singing Crab Cajun Bayou Restaurant and redesign the company logo. Perform usability testing via a focus group.</p>
+			<p>Role: Front End Design, Page Layouts, Wireframes, Site Map, Mood Board, HTML5, CSS3, JavaScript and jQuery.</p>
+			<a href="webdesign/singingcrab/index.html" target="_blank" class="portlink">WEBSITE</a>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+				
+		
+		<div class="h4wrap"><h4 class="setweb mobilehide">Web</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/websubaru.jpg" alt="Subaru Fan Site" />
+			<a href="images/portfolio/websubaru_large.jpg" data-fancybox-group="subaru" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Subaru <span class="blue">Blog</span></h3>
+			<p>Project: Design a blog around an existing template and modify the look and feel to better suit the subject matter. Blog is a Subaru Fan site.</p>
+			<p>Role: Front End Design,  WordPress, HTML5 and CSS3.</p>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+		
+		
+		<div class="h4wrap"><h4 class="setweb mobilehide">Web</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/webbeatrice.jpg"  alt="Beatrice Spa & Beauty Salon" />
+			<a href="images/portfolio/webbeatrice_large.jpg" data-fancybox-group="spa" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+			<div class="hidden">
+				<a href="images/portfolio/wireframe1.jpg" data-fancybox-group="spa" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Singing Crab Website"></a>
+				<a href="images/portfolio/sitemap.jpg" data-fancybox-group="spa" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Singing Crab Website"></a>
+			</div><!-- end .hidden -->
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Beatrice <span class="blue">Spa</span></h3>
+			<p>Project: Design a site for a client called Beatrice Spa & Beauty Salon, conduct a competitive analysis of competitor sites. Support the client's stated business goals.</p>
+			<p>Role: Front End Design, Page Layouts, Wireframes, Site Map, Mood Board, XHTML, CSS, JavaScript and jQuery.</p>
+			<a href="http://neeringdesign.com/webdesign/spa/index.html" target="_blank" class="portlink">WEBSITE</a>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+		
+		
+		<div class="h4wrap"><h4 class="setweb mobilehide">Web</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/websilver.jpg" alt="Silver Spark Jewelry" />
+			<a href="images/portfolio/websilver_large.jpg" data-fancybox-group="silver" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Silver Spark <span class="blue">Jewelry</span></h3>
+			<p>Project: Designed the clients website using provided images, created a soft elegant look to compliment the jewelry.</p>
+			<p>Role: Front End Design, XHTML and CSS.</p>
+			<a href="webdesign/silverspark/index.html" target="_blank" class="portlink">WEBSITE</a>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+		
+		
+		<div class="h4wrap"><h4 class="setweb mobilehide">Web</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/webflamingo.jpg" alt="Killer Flamingos" />
+			<a href="images/portfolio/webflamingo_large.jpg" data-fancybox-group="flamingo" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Killer <span class="blue">Flamingos</span></h3>
+			<p>Project: Redesign the Killer Flamingos website to meet the functional and/or visual needs of the client, alter the layout structure, navigation, color scheme and graphics. I also redesigned their logo.</p>
+			<p>Role: Front End Design, XHTML and CSS.</p>
+			<a href="webdesign/flamingos/flamingos.html" target="_blank" class="portlink">WEBSITE</a>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+		
+		
+		<div class="h4wrap"><h4 class="setweb mobilehide">Web</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/webtesla.jpg" alt="Tesla" class="webdesign" />
+			<a href="images/portfolio/webtesla_large.jpg" data-fancybox-group="tesla" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Nikola <span class="blue">Tesla</span></h3>
+			<p>This was a concept for Nikola Tesla, master or electricity and technology. He was best known for the Tesla coil and photos often portrayed him with bolts of electricity surrounding him.</p>
+			<p>Role: Front End Design.</p>
+		</div><!--end .portdesc -->
+		<div id="graph"></div> 
+		<div class="portline"></div><br class="clear" />
+
+
+
+		<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+		<h2 id="port2">Graphic <span class="blue">Design</span></h2><br class="clear" />
+		<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+		
+		<div  class="h4wrap"><h4 id="graphic" class="setgraphic mobilehide">Graphic</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/graphicjack.jpg" alt="Jack Johnson CD" />
+			<a href="images/portfolio/graphicjack_large.jpg" data-fancybox-group="jack" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Jack Johnson <span class="blue">CD Cover</span></h3>
+			<p>Project: Design an effective three-panel CD insert that reflects the artist and uses appropriate image style for the genre.</p>
+			<p>Method: Photoshop, Kuler and Illustrator.</p>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+		
+		
+		<div  class="h4wrap"><h4 class="setgraphic mobilehide">Graphic</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/graphiceminem.jpg" alt="Eminem Book Cover" />
+			<a href="images/portfolio/graphiceminem_large.jpg" data-fancybox-group="eminem" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Eminem Book <span class="blue">Cover</span></h3>
+			<p>Project: Design a book cover for the tell-all artist biography and also create a logo using only text. This cover was made for hip-hop artist Eminem.</p>
+			<p>Method: Photoshop for compositing and layout. Illustrator for logo design.</p>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+		
+		
+		<div  class="h4wrap"><h4 class="setgraphic mobilehide">Graphic</h4></div>
+		<div class="tiesto portimage view view-first">
+			<img src="images/portfolio/graphictiesto.jpg" alt="Tiesto Poster" />
+			<a href="images/portfolio/graphictiesto_large.jpg" data-fancybox-group="tiesto" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Tiesto <span class="blue">Poster</span></h3>
+			<p>Project: Design a creative event poster that showcases the artist Tiesto. Use a style appropriate for trance music. </p>
+			<p>Method: Photoshop for layout and compositing.</p>
+		</div><!--end .portdesc -->
+		<div class="portline"></div><br class="clear" />
+		
+				
+		<div  class="h4wrap"><h4 class="setgraphic mobilehide">Graphic</h4></div>
+		<div class="shania portimage view view-first">
+			<img src="images/portfolio/graphicshania.jpg" alt="Shania Promo" />
+			<a href="images/portfolio/graphicshaniaweb.jpg" data-fancybox-group="shania" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+			<div class="hidden">
+				<a href="images/portfolio/graphicshaniaweb_before.jpg" data-fancybox-group="shania" title="Orinal photo and images used for 'Web Photo'" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Shania"></a>
+				<a href="images/portfolio/graphicshaniabw_side.jpg" data-fancybox-group="shania" title="Original and Autograph Duotone version after facial cleanup and background removal" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Shania"></a>
+				<a href="images/portfolio/graphicshaniacolor_side.jpg" data-fancybox-group="shania" title="Original and Color Autograph version after facial cleaup and background removal" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Shania"></a>
+				<a href="images/portfolio/graphicshaniacolor_both.jpg" data-fancybox-group="shania" title="Closeup of eye whitening, hair and skin cleanup" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Shania"></a>
+			</div><!-- end .hidden -->
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Shania Promo <span class="blue">Package</span></h3>
+			<p>Project: Create three promotional images for Shania Twain. A color "glossy" for autographs and sent to fan club members. A duotone "glossy" for press and publicity contacts. A fun Web photo for distribution to fans via blogs and email. </p>
+			<p>Method: Photoshop to composite imagery, color and light balancing, background modification, retouching of face and skin.</p>
+		</div><!--end .portdesc -->
+		<div class="portline"></div><br class="clear" />
+		
+				
+		<div  class="h4wrap"><h4 class="setgraphic mobilehide">Graphic</h4></div>
+		<div class="chilis portimage view view-first">
+			<img src="images/portfolio/graphicchili.jpg" alt="Chili Peppers Poster" />
+			<a href="images/portfolio/graphicchilis_large.jpg" data-fancybox-group="chilis" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Chili Peppers <span class="blue">Poster</span></h3>
+			<p>Project: Design a full-page magazine advertisement for a local concert event. Ad is created for the rock band Red Hot Chili Peppers.</p>
+			<p>Method: Photoshop for compositing and image filtering. Illustrator for tribal shapes.</p>
+		</div><!--end .portdesc -->
+		<div class="portline"></div><br class="clear" />
+		
+				
+		<div  class="h4wrap"><h4 class="setgraphic mobilehide">Graphic</h4></div>
+		<div class="dave portimage view view-first">
+			<img src="images/portfolio/graphicdave.jpg" alt="Dave Brubeck Pass" />
+			<a href="images/portfolio/graphicdave_large.jpg" data-fancybox-group="dave" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Dave Brubeck <span class="blue">Pass</span></h3>
+			<p>Project: Create a backstage pass card and lanyard in Photoshop without the use of images. Images of the jazz pianist Dave Brubeck  were used to invoke a classy feel.</p>
+			<p>Method: Photoshop to composite images, adjust colors, create the lanyard and card. Illustrator for the ampersand.</p>
+		</div><!--end .portdesc -->
+		<div id="game2"></div> 
+		<div class="portline"></div><br class="clear" />
+	   
+		
+		
+		<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+		<h2 id="port3">Game <span class="blue">Design</span></h2><br class="clear" />
+		<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+		
+		<div  class="h4wrap"><h4 id="game" class="setgame mobilehide">Game</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/gamemagicgreen1_small.jpg"  alt="Magic the Gathering" />
+			<a href="images/portfolio/gamemagicgreen1.jpg" data-fancybox-group="magic" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+			<div class="hidden">
+				<a href="images/portfolio/gamemagicred.jpg" data-fancybox-group="magic" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Magic the Gathering"></a>
+				<a href="images/portfolio/gamemagicblue.jpg" data-fancybox-group="magic" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Magic the Gathering"></a>
+				<a href="images/portfolio/gamemagicgreen2.jpg" data-fancybox-group="magic" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Magic the Gathering"></a>
+				<a href="images/portfolio/gamemagicwhite.jpg" data-fancybox-group="magic" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Magic the Gathering"></a>
+				<a href="images/portfolio/gamemagicblack.jpg" data-fancybox-group="magic" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Magic the Gathering"></a>
+				<a href="images/portfolio/gamemagicred2.jpg" data-fancybox-group="magic" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Magic the Gathering"></a>
+				<a href="images/portfolio/gamemagicgreen3.jpg" data-fancybox-group="magic" title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Magic the Gathering"></a>
+			</div><!-- end .hidden -->
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Magic <span class="blue">Tactics</span></h3>
+			<p>Project: Magic the Gathering: Tactics is a turn based version of the popular card game. I worked on all five modular environments and art assets.</p>
+			<p>Method: Maya, Photoshop, HeadusUVLayout, xNormal and proprietary level editor.</p>
+			<p>Client: Sony Online Entertainment</p>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+		
+		
+		<div  class="h4wrap"><h4 class="setgame mobilehide">Game</h4></div>
+		<div class="portimage view view-first">
+			<img src="images/portfolio/gamepainbootyfar_small.jpg" data-fancybox-group="pain" alt="Pain" />
+			<a href="images/portfolio/gamepainbootyfar.jpg" data-fancybox-group="pain" title="" class="info fancy trigger mobilehide">
+				<div>See more <span class="blue">images</span></div>
+			</a>
+			<div class="hidden">
+				<a href="images/portfolio/gamepainbootynear.jpg" data-fancybox-group="pain"  title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Pain"></a>
+				<a href="images/portfolio/gamepainkartshack.jpg" data-fancybox-group="pain"  title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Pain"></a>
+				<a href="images/portfolio/gamepainkart.jpg" data-fancybox-group="pain"  title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Pain"></a>
+				<a href="images/portfolio/gamepainmovie1.jpg" data-fancybox-group="pain"  title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Pain"></a>
+				<a href="images/portfolio/gamepainmovie2.jpg" data-fancybox-group="pain"  title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Pain"></a>
+				<a href="images/portfolio/gamepainmovie3.jpg" data-fancybox-group="pain"  title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Pain"></a>
+				<a href="images/portfolio/gamepainamuse1.jpg" data-fancybox-group="pain"  title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Pain"></a>
+				<a href="images/portfolio/gamepainamuse2.jpg" data-fancybox-group="pain"  title="" class="fancy"><img src="images/portfolio/webcrab.jpg" alt="Pain"></a>
+			</div>
+		</div><!-- end .portimage -->
+		<div class="portdesc">
+			<h3>Pain <span class="blue">PS3</span></h3>
+			<p>Project: Pain is a downloadable PS3 game on the Playstation network. Players score points by launching their character into the environment to cause as much damage as possible. I was involved in developing three of the levels available for download.</p>
+			<p>Method: Maya, Havok Physics Engine, Photoshop, xNormal and proprietary level editor.</p>
+			<p>Client: Idol Minds</p>
+		</div><!--end .portdesc -->
+		<div class="portline"></div>
+
+		<div class="clear"></div>
+	  
+	</div><!-- end #portfolio -->
+
+	
+
+	<h2 id="abouttest">About <span class="blue">Me</span></h2>
+	<div id="about">
+		
+		<p>Having been exposed to so many different aspects of design has made me appreciate form, color and ergonomics. In school I grew very fond of the computer as a design tool and quickly found myself working digitally whenever projects would allow it.</p> 
+		<p>After graduating, I began my career in the Video Game industry as an Digital Artist. Utilizing Autodesk Maya and Adobe Photoshop became the norm for 3D modeling, texturing and level design. After 14 years in the game industry I had a longing for something new, and Web Design became my new passion.</p>
+	</div>
+	<div class="about">
+		<div class="photome"></div>
+		<p>When I'm not refining digital media at the computer I like to get outside and play volleyball at several of the tournaments Colorado has to offer. You may also find me riding some singletrack every now and then.</p> 
+		<p>If I'm not playing sports then you'll probably find me armed with a Canon Ti2. Digital photography is amazing these days and I enjoy snapping some pics while out and about!</p>
+	</div>
+	
+	<div class="line linepush2"></div>
+	<br class="clear" />
+	
+
+
+	<br class="clear" />
+
+
+	<h2>Contact <span class="blue">Info</span></h2>
+	<div id="contact">
+		<p>I am currently available for part time freelance work. Please contact me to inquire about rates and availability. Thanks for looking!</p>
+<!-- 		<form name="contactform" method="post" action="send_form_email.php">
+			<label for="first_name">First Name</label>
+			<input  type="text" name="first_name" id="first_name" placeholder="Enter your first name" class="input">
+			<label for="last_name">Last Name</label>
+			<input  type="text" name="last_name" id="last_name" placeholder="Enter your last name" class="input">
+			<label for="email">Email</label>
+			<input  type="text" name="email" id="email" placeholder="Enter your email address" class="input">
+			<label for="telephone">Telephone</label>
+			<input  type="text" name="telephone" id="telephone" placeholder="Enter your phone number" class="input">
+			<label for="comments">Comments</label>
+			<textarea  name="comments"  id="comments" placeholder="Leave me a message"></textarea>
+			<input type="submit" value="Submit" class="button">
+		</form> -->
+		<div class="contactme">
+			<p>Craig Neering <br />
+			Superior, Colorado<br />
+			<a href="mailto:kinetic8@gmail.com" class="email"><i class="fa fa-envelope-o"></i>kinetic8@gmail.com</a></p>			
+		</div>
+		<br class="clear" />
+	</div>
+	<!-- <div class="bottomspacer"></div> -->
+	<div id="device"></div>
+	<br class="clear" />
+</section><!-- end capsule -->
+
+<div id="back-top">
+	<!-- <a href="#top"><span></span></a> -->
+	<i class="fa fa-arrow-circle-o-up"></i>
+</div>
+
+<div id="footer">
+	<nav>
+		<a href="#craig" class="mobileBtnL">Home </a><span class="spacer">|</span> 
+		<a href="#port1" class="mobileBtnR">Web<span class="mobilehide"> Design</span></a> <span class="spacer">|</span> 
+		<a href="#port2" class="mobileBtnL">Graphic<span class="mobilehide"> Design</span></a> <span class="spacer">|</span> 
+		<a href="#port3" class="mobileBtnR">Game<span class="mobilehide"> Design</span></a> <span class="spacer tablethide">|</span>
+		<a href="#about" class="mobilehide tablethide">About</a><span class="spacer tablethide">|</span>
+		<a href="#contact" class="mobilehide tablethide">Contact</a>
+	</nav>
+</div>
+  
+  
+
+
+</body>
+</html>
+
